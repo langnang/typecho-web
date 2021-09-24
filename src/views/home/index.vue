@@ -38,7 +38,7 @@
         </span>
         <el-skeleton :rows="12" animated v-if="tab.loading" />
         <div v-else>
-          <el-scrollbar style="height: 530px">
+          <el-scrollbar style="height: calc(100vh - 280px)">
             <el-card
               v-for="item in tab.list"
               :key="item.cid"
